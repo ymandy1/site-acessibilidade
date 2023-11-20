@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Site de Acessibilidade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="tecnologias.html">Acessibilidade na tecnologia</a></li>
+                <li><a href="inclusao-social.html">Inclusão Social</a></li>
+                <li><a href="dicas-praticas.html">Dicas Práticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section>
+        <span class="sr-only">Ícone de Acessibilidade</span>
+        <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+
+        <div class="overlay"></div>
+        <div class="modal" aria-labelledby="modal-title" role="dialog">
+            <h1 id="modal-title">Ajuste de acessibilidade</h1>
+            <section>
+                <h2>Cor letras</h2>
+                <ul>
+                    <li><button onclick="changePTextColor('red')">Vermelho</button></li>
+                    <li><button onclick="changePTextColor('blue')">Azul</button></li>
+                    <li><button onclick="changePTextColor('green')">Verde</button></li>
+                    <li><button onclick="changePTextColor('black')">Preto</button></li>
+                    <li><button onclick="changePTextColor('white')">Branco</button></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Cor fundo das letras</h2>
+                <ul>
+                    <li><button onclick="changePColor('red')">Vermelho</button></li>
+                    <li><button onclick="changePColor('blue')">Azul</button></li>
+                    <li><button onclick="changePColor('green')">Verde</button></li>
+                    <li><button onclick="changePColor('white')">Branco</button></li>
+                    <li><button onclick="changePColor('black')">Preto</button></li>
+                </ul>
+            </section>
+            <button onclick="toggleModal()">Fechar</button>
+        </div>
+<section>
+<main>
+    <section id="inclusao-social">
+        <h2>Inclusão Social</h2>
+        <p>A inclusão social na acessibilidade vai além do simples acesso físico ou digital; trata-se de criar um ambiente que acolhe e valoriza a diversidade, proporcionando oportunidades equitativas para todos participarem plenamente na sociedade. Quando falamos em acessibilidade, estamos falando sobre abrir portas não apenas fisicamente, mas também socialmente, garantindo que todos, independentemente de suas habilidades ou características, tenham a chance de contribuir e se envolver de maneira significativa. </p>
+       
+        <a class="social" href="dicas-praticas.html">Confira Dicas Práticas para a Vida Cotidiana</a>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

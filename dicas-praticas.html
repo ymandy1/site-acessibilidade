@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+</head>
+<body>
+
+    <header>
+            <h1>Site de Acessibilidade</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="tecnologias.html">Acessibilidade na tecnologia</a></li>
+                    <li><a href="inclusao-social.html">Inclusão Social</a></li>
+                    <li><a href="dicas-praticas.html">Dicas Práticas</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    <section>
+        <span class="sr-only">Ícone de Acessibilidade</span>
+        <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+
+        <div class="overlay"></div>
+        <div class="modal" aria-labelledby="modal-title" role="dialog">
+            <h1 id="modal-title">Ajuste de acessibilidade</h1>
+            <section>
+                <h2>Cor letras</h2>
+                <ul>
+                    <li><button onclick="changePTextColor('red')">Vermelho</button></li>
+                    <li><button onclick="changePTextColor('blue')">Azul</button></li>
+                    <li><button onclick="changePTextColor('green')">Verde</button></li>
+                    <li><button onclick="changePTextColor('black')">Preto</button></li>
+                    <li><button onclick="changePTextColor('white')">Branco</button></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Cor fundo das letras</h2>
+                <ul>
+                    <li><button onclick="changePColor('red')">Vermelho</button></li>
+                    <li><button onclick="changePColor('blue')">Azul</button></li>
+                    <li><button onclick="changePColor('green')">Verde</button></li>
+                    <li><button onclick="changePColor('white')">Branco</button></li>
+                    <li><button onclick="changePColor('black')">Preto</button></li>
+                </ul>
+            </section>
+            <button onclick="toggleModal()">Fechar</button>
+        </div>
+<section>
+    <main>
+        <section id="dicas-praticas">
+            <h2>Dicas Práticas para a Vida Cotidiana</h2>
+            <p>Em nosso cotidiano, há diversas maneiras de tornar o ambiente mais acessível e inclusivo. Ao adotar práticas conscientes, podemos contribuir para criar um espaço onde todas as pessoas, independentemente de suas habilidades ou características, se sintam bem-vindas e possam participar plenamente na sociedade.
+
+                Transporte Acessível:
+                Ao escolher meios de transporte, dê preferência àqueles que ofereçam acessibilidade, como ônibus adaptados, metrôs com rampas e táxis com facilidades para cadeiras de rodas. Isso garante que o deslocamento seja uma experiência inclusiva para todos.
+                
+                Espaços Públicos e Privados:
+                Ao planejar eventos ou escolher locais para atividades sociais, considere a acessibilidade. Escolha locais com rampas de acesso, banheiros adaptados e sinalização clara. Em casa, adapte o ambiente para facilitar a movimentação, tornando-o acolhedor para todos.
+                
+                Comunicação Inclusiva:
+                Utilize uma linguagem inclusiva em todas as formas de comunicação. Isso envolve o uso de termos respeitosos e inclusivos, contribuindo para um diálogo que valorize a diversidade e evite estigmatizações.
+                
+                Tecnologia Acessível:
+                Certifique-se de que dispositivos e aplicativos utilizados sejam acessíveis a todos. Escolha tecnologias que ofereçam recursos como leitores de tela, facilitando o acesso a informações para pessoas com diferentes necessidades.</p>
+            
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
